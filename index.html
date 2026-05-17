@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركبتي — الصفحات القانونية</title>
+  <meta name="description" content="الصفحات القانونية والدعم الفني لتطبيق مركبتي" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .index-section-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 40px 0 12px;
+    }
+    .divider-line {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .badge-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-family: var(--font-en);
+    }
+  </style>
+</head>
+<body class="lang-ar">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="app-icon.png" class="logo-icon" alt="مركبتي" style="background:none;padding:0;object-fit:cover;" />
+        <span class="logo-text">مركبتي</span>
+      </a>
+      <div class="header-actions">
+        <div class="lang-toggle">
+          <a href="index.html" class="active">عربي</a>
+          <a href="#" onclick="switchToEn(event)">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- App Hero -->
+    <div class="app-hero">
+      <img src="app-icon.png" class="app-icon-big" alt="مركبتي" style="background:none;box-shadow:0 8px 32px var(--accent-glow);object-fit:cover;display:block;" />
+      <h1 class="app-name">مركبتي</h1>
+      <p class="app-desc">تطبيق شخصي لتنظيم مركباتك، تتبع الصيانة، وضبط التذكيرات — كل بياناتك على جهازك فقط.</p>
+      <div class="badge-row">
+        <span class="badge-pill">iOS</span>
+        <span class="badge-pill">Android</span>
+        <span class="badge-pill">Local Storage</span>
+        <span class="badge-pill">No Account Required</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="divider-line" />
+
+      <!-- Arabic Links -->
+      <div class="index-section-title">الصفحات بالعربية</div>
+      <div class="links-grid">
+        <a href="privacy-policy-ar.html" class="link-card">
+          <span class="lc-icon">🔒</span>
+          <div>
+            <div class="lc-title">سياسة الخصوصية</div>
+            <div class="lc-sub">كيف نتعامل مع بياناتك</div>
+          </div>
+        </a>
+        <a href="terms-ar.html" class="link-card">
+          <span class="lc-icon">📄</span>
+          <div>
+            <div class="lc-title">شروط الاستخدام</div>
+            <div class="lc-sub">شروط وأحكام التطبيق</div>
+          </div>
+        </a>
+        <a href="support-ar.html" class="link-card">
+          <span class="lc-icon">💬</span>
+          <div>
+            <div class="lc-title">الدعم الفني</div>
+            <div class="lc-sub">أسئلة شائعة وتواصل</div>
+          </div>
+        </a>
+      </div>
+
+      <hr class="divider-line" />
+
+      <!-- English Links -->
+      <div class="index-section-title" style="font-family: var(--font-en); direction: ltr; text-align: left;">Legal Pages in English</div>
+      <div class="links-grid">
+        <a href="privacy-policy-en.html" class="link-card" style="direction: ltr; text-align: left;">
+          <span class="lc-icon">🔒</span>
+          <div>
+            <div class="lc-title" style="font-family: var(--font-en);">Privacy Policy</div>
+            <div class="lc-sub" style="font-family: var(--font-en);">How we handle your data</div>
+          </div>
+        </a>
+        <a href="terms-en.html" class="link-card" style="direction: ltr; text-align: left;">
+          <span class="lc-icon">📄</span>
+          <div>
+            <div class="lc-title" style="font-family: var(--font-en);">Terms of Use</div>
+            <div class="lc-sub" style="font-family: var(--font-en);">App terms and conditions</div>
+          </div>
+        </a>
+        <a href="support-en.html" class="link-card" style="direction: ltr; text-align: left;">
+          <span class="lc-icon">💬</span>
+          <div>
+            <div class="lc-title" style="font-family: var(--font-en);">Support</div>
+            <div class="lc-sub" style="font-family: var(--font-en);">FAQ and contact</div>
+          </div>
+        </a>
+      </div>
+
+      <hr class="divider-line" />
+
+      <!-- Contact -->
+      <div class="section-card">
+        <h2><span class="icon">✉️</span> تواصل مع المطوّر</h2>
+        <p>للدعم أو الاستفسارات القانونية أو أي شيء آخر:</p>
+        <a href="mailto:gallayy@gmail.com" class="email-link">📧 gallayy@gmail.com</a>
+        <p style="margin-top: 12px; font-size: 13px; color: var(--text-muted);">Nasser Alhayyan</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div>
+      <a href="privacy-policy-ar.html">سياسة الخصوصية</a> &nbsp;·&nbsp;
+      <a href="terms-ar.html">شروط الاستخدام</a> &nbsp;·&nbsp;
+      <a href="support-ar.html">الدعم الفني</a>
+    </div>
+    <div style="margin-top: 8px;">Merkabati © 2026</div>
+  </footer>
+
+  <script>
+    function switchToEn(e) {
+      e.preventDefault();
+      // Switch page language to English view
+      document.documentElement.lang = 'en';
+      document.documentElement.dir = 'ltr';
+      document.body.className = 'lang-en';
+    }
+  </script>
+
+</body>
+</html>
